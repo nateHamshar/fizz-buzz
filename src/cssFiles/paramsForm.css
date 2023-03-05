@@ -1,0 +1,21 @@
+.paramsFormDiv{
+    width: 50%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paramsForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+
+}
+
+.submitButton{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
