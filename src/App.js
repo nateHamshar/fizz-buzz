@@ -1,5 +1,5 @@
 import ParamsForm from "./ParamsForm";
-
+import "./cssFiles/app.css"
 function App() {
   return (
     <div className="App">

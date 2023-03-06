@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.titleSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.titleHeader{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-size: 2rem;
+}

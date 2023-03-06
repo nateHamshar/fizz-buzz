@@ -4,18 +4,13 @@ import ResponseChart from "./ResponseChart";
 
 const ParamsForm = () => {
 
-    const [firstMultiple, setFirstMultiple] = useState(3);
-    const [firstReplacer, setFirstReplacer] = useState("fizz");
+    const [firstMultiple, setFirstMultiple] = useState();
+    const [firstReplacer, setFirstReplacer] = useState();
 
-    const [secondMultiple, setSecondMultiple] = useState(5);
-    const [secondReplacer, setSecondReplacer] = useState("buzz");
+    const [secondMultiple, setSecondMultiple] = useState();
+    const [secondReplacer, setSecondReplacer] = useState();
 
-    const [bothReplacer, setBothReplacer] = useState("fizz-buzz");
-
-    const handleSubmit = ()  => {
-        
-    }
-
+    const [bothReplacer, setBothReplacer] = useState();
 
     return (
         <div className="paramsFormDiv">
@@ -23,44 +18,41 @@ const ParamsForm = () => {
                 <label htmlFor="replaceFirstMultiple" className="replaceFirstMultiple">Replace multiples of
                     <input  type="number"
                             required
-                            className="firstMultiple" 
+                            className="firstMultiple inputField" 
                             id="replaceFirstMultiple"
                             onChange={(e) => setFirstMultiple(e.target.value)} />
                         with 
                     <input  type="text"
                             required 
                             id="replacerOne" 
-                            className="firstReplacer"
+                            className="firstReplacer inputField"
                             onChange={(e) => setFirstReplacer(e.target.value)}/>
+                        .
                 </label>
 
                 <label htmlFor="replaceFirstMultiple" className="replaceFirstMultiple">Replace multiples of
                     <input  type="number" 
                             required
-                            className="firstMultiple" 
+                            className="firstMultiple inputField" 
                             id="replaceFirstMultiple" 
                             onChange={(e) => setSecondMultiple(e.target.value)} />
-                    with 
+                        with 
                     <input  type="text" 
                             required
                             id="replacerOne" 
-                            className="firstReplacer"
+                            className="firstReplacer inputField"
                             onChange={(e) => setSecondReplacer(e.target.value)}/>
+                        .
                 </label>
                 
-                <label htmlFor="replaceFirstMultiple" className="replaceFirstMultiple">Replace multiples of both with 
+                <label htmlFor="replacerBoth" className="replaceBoth">Replace multiples of both with 
                     <input  type="text" 
                             required
-                            id="replacerOne" 
-                            className="firstReplacer"
+                            id="replacerBoth" 
+                            className="both inputField"
                             onChange={(e) => setBothReplacer(e.target.value)}/>
+                        .
                 </label>
-
-                <input  type="button" 
-                        required
-                        className="submitButton" 
-                        value="submit" 
-                        onClick={() => {handleSubmit()}} />
             </form>
 
         

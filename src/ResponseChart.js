@@ -1,3 +1,4 @@
+import "./cssFiles/responseChart.css"
 
 const ResponseChart = (props) => {
 
@@ -22,9 +23,17 @@ const ResponseChart = (props) => {
     }
 
     return (
-        numberArray.forEach((e) => {
-            <p>{e.value}</p>
-        })
+        <div className="changedValuesGrid">
+            {
+                numberArray.map((e) => {
+                    return (
+                        <p className="gridItem">
+                            {e}
+                        </p>
+                    )
+                })
+            }
+        </div>
     )
 }
  

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.changedValuesGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr  1fr ;
+    gap: 2px;
+    background-color: darkblue;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 750px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: orangered;
+    width: 100%;
+    height: 100%;
+    font-family: 'Press Start 2P', serif;
+}
